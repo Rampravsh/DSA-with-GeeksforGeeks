@@ -32,3 +32,27 @@ To represent the rate of growth, we use asymptotic notations. These notations pr
 *   **Big-O Notation (O):** Describes the upper bound (worst-case scenario).
 *   **Omega Notation (Ω):** Describes the lower bound (best-case scenario).
 *   **Theta Notation (Θ):** Describes the tight bound (average-case scenario).
+
+## Asymptotic Notations Graph
+
+The following graph shows a comparison of the time complexities found in the `index.js` file's functions.
+
+```
+Time Complexity Growth
+
+      |
+      | O(n^2) - sumOfNNaturalNumbers4
+      | O(n)  - sumOfNNaturalNumbers, sumOfNNaturalNumbers3
+      | O(1)  - sumOfNNaturalNumbers2
+      |
+      ---------------------> Input Size (n)
+
+```
+
+### Explanation
+
+*   **O(1) - Constant Time:** Represented by `sumOfNNaturalNumbers2`. The execution time of this function remains constant regardless of the input size `n`. It's the most efficient.
+*   **O(n) - Linear Time:** Represented by `sumOfNNaturalNumbers` and `sumOfNNaturalNumbers3`. The execution time grows linearly with the input size `n`.
+*   **O(n^2) - Quadratic Time:** Represented by `sumOfNNaturalNumbers4`. The execution time grows quadratically with the input size `n`. This is less efficient for large inputs compared to O(1) and O(n).
+
+This visualization helps in understanding how the choice of algorithm can drastically affect performance as the input size increases.
